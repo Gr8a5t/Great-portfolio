@@ -1,0 +1,85 @@
+[
+  
+  {
+    "name": "FreshBite",
+    "desc": "Basic food website landing page built on the React libary and ready to use for business.",
+    "image": "foodicious",
+    "category": "mern",
+    "links": {
+      "view": "front-end/assets/images/projects/foodicious.png",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Eccomerce Site",
+    "desc": "Basic Eccomerce site with admin dashboard, built on the React libary and ready to use for business.",
+    "image": "eccomerce",
+    "category": "mern",
+    "links": {
+      "view": "https://flipkartwebs.herokuapp.com/",
+      "code": "https://github.com/jigar-sable/flipkart-mern"
+    }
+  },
+  {
+    "name": "Calculator",
+    "desc": "Basic calculator using Html, Css and Javascript.",
+    "image": "calculator",
+    "category": "basicweb",
+    "links": {
+      "view": "https://resumegenx.netlify.app/",
+      "code": "https://github.com/jigar-sable/resumegen"
+    }
+  },
+  {
+    "name": "To-Do APP",
+    "desc": "Simple to-do site using HTML, CSS and JAVASCRIPT.",
+    "image": "TO-DO",
+    "category": "basicweb",
+    "links": {
+      "view": "https://reactjsprojects.herokuapp.com/",
+      "code": "https://github.com/jigar-sable/React-Projects"
+    }
+  },
+  {
+    "name": "Youtube clone",
+    "desc": "Youtube clone using React.js.",
+    "image": "youtube",
+    "category": "mern",
+    "links": {
+      "view": "https://github.com/jigar-sable/Flipkart-Clone-PHP",
+      "code": "https://github.com/jigar-sable/Flipkart-Clone-PHP"
+    }
+  },
+  {
+    "name": "Shoe-eccomerce Site",
+    "desc": "Eccomerce site basically for selling shoes, also comes with an admin dashboard.",
+    "image": "Shoe",
+    "category": "mern",
+    "links": {
+      "view": "https://jigar-sable.github.io/JavaScript-Projects",
+      "code": "https://github.com/jigar-sable/JavaScript-Projects"
+    }
+  },
+ 
+  {
+    "name": "Portfolio Website",
+    "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
+    "image": "portfolio",
+    "category": "basicweb",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/jigar-sable/Portfolio-Website"
+    }
+  },
+ 
+  {
+    "name": "WebChat Website",
+    "desc": "It's a web based chat app made using popular javaScript library Socket IO. Allows multiple users to connect.",
+    "image": "webchat1",
+    "category": "mern",
+    "links": {
+      "view": "https://github.com/jigar-sable/WebChat#webchat",
+      "code": "https://github.com/jigar-sable/WebChat"
+    }
+  }
+]
