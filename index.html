@@ -13,36 +13,68 @@
     <!-- Favicon -->
     <link id='favicon' rel="shortcut icon" href="./front-end/assets/images/favicon1.png" type="image/x-png">
     <title>Great Onweazu | Portfolio</title>
+    <!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <style>
-      /* Preloader */
-.loader-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff; /* or a color matching your theme */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
+      /* Preloader - Three Bouncing Dots (Option 2) */
+      .loader-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff; /* change to dark if you prefer a dark background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+      }
 
-.loader-container img {
-    width: 100px; /* adjust size */
-    height: 100px;
-}
+      .dots {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
 
+      .dots span {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: #0f4c81; /* primary theme color */
+        border-radius: 50%;
+        animation: bounce 0.6s infinite alternate;
+      }
+
+      .dots span:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      .dots span:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+
+      @keyframes bounce {
+        to { transform: translateY(-15px); }
+      }
+
+      .loader-container.hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
     </style>
 </head>
 <body oncontextmenu="return false">
 
 <!-- preloader starts -->
-<div class="loader-container" id="preloader">
-    <img src="./front-end/assets/images/preloader3.gif" alt="Loading...">
+<div class="loader-container" id="preloader" aria-hidden="false">
+  <div class="dots" role="status" aria-label="Loading">
+    <span></span><span></span><span></span>
+  </div>
 </div>
 <!-- preloader ends -->
-">
 
 <!-- navbar starts -->
 <header>
@@ -331,16 +363,16 @@
           <p> <i class="fas fa-map-marked-alt"></i>UP, Keffi</p>
           <div class="share">
 
-              <a href="https://www.linkedin.com/in/jigar-sable" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
-              <a href="https://github.com/jigar-sable" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="https://dev.to/great_onweazu_335975df396" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="https://github.com/Gr8a5t" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
               <a href="mailto:greatonweazu48@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
-              <a href="https://twitter.com/jigar_sable" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
-              <a href="https://t.me/lifecode5" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+              <a href="https://twitter.com/@GOnweazu98410" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+              <a href="https://t.me/@Gr8t17" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
           </div>
       </div>
   </div>
 
-  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jigar-sable"> Great</a></h1>
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://dev.to/great_onweazu_335975df396"> Great</a></h1>
 
 </section>
 <!-- footer section ends -->
@@ -394,21 +426,16 @@ VANTA.WAVES({
 </script>
 
 <script>
-    // Keep preloader visible for 30 seconds
-    window.addEventListener('load', function() {
-        const preloader = document.getElementById('preloader');
-        setTimeout(() => {
-            preloader.style.opacity = '0';
-            preloader.style.transition = 'opacity 0.5s ease';
-            setTimeout(() => {
-                preloader.style.display = 'none';
-            }, 500);
-        }, 4000); // 30 seconds
-    });
+  // Preloader: hide after page load with smooth fade
+  window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    // keep animation visible briefly after load so it's noticed
+    setTimeout(function() {
+      preloader.classList.add('hidden');
+      preloader.setAttribute('aria-hidden', 'true');
+    }, 2000); // 2000ms = 2s (adjust if you want it longer/shorter)
+  });
 </script>
-
-
-
 
 </body>
 </html>
