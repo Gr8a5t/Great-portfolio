@@ -6,7 +6,7 @@
     "image": "foodicious",
     "category": "mern",
     "links": {
-      "view": "front-end/assets/images/projects/foodicious.png",
+      "view": "server/foodicious.png",
       "code": "#"
     }
   },
@@ -16,8 +16,8 @@
     "image": "eccomerce",
     "category": "mern",
     "links": {
-      "view": "https://flipkartwebs.herokuapp.com/",
-      "code": "https://github.com/jigar-sable/flipkart-mern"
+      "view": "server/eccomerce.png",
+      "code": "#"
     }
   },
   {
@@ -26,8 +26,8 @@
     "image": "calculator",
     "category": "basicweb",
     "links": {
-      "view": "https://resumegenx.netlify.app/",
-      "code": "https://github.com/jigar-sable/resumegen"
+      "view": "Demo/Calculator/index.html",
+      "code": "#"
     }
   },
   {
@@ -36,8 +36,8 @@
     "image": "TO-DO",
     "category": "basicweb",
     "links": {
-      "view": "https://reactjsprojects.herokuapp.com/",
-      "code": "https://github.com/jigar-sable/React-Projects"
+      "view": "Demo/To-Do-App/index.html",
+      "code": "#"
     }
   },
   {
@@ -46,8 +46,8 @@
     "image": "youtube",
     "category": "mern",
     "links": {
-      "view": "https://github.com/jigar-sable/Flipkart-Clone-PHP",
-      "code": "https://github.com/jigar-sable/Flipkart-Clone-PHP"
+      "view": "server/youtube.png",
+      "code": "#"
     }
   },
   {
@@ -56,8 +56,8 @@
     "image": "Shoe",
     "category": "mern",
     "links": {
-      "view": "https://jigar-sable.github.io/JavaScript-Projects",
-      "code": "https://github.com/jigar-sable/JavaScript-Projects"
+      "view": "server/Shoe.png",
+      "code": "#"
     }
   },
  
@@ -68,7 +68,7 @@
     "category": "basicweb",
     "links": {
       "view": "#",
-      "code": "https://github.com/jigar-sable/Portfolio-Website"
+      "code": "#"
     }
   },
  
@@ -78,8 +78,8 @@
     "image": "webchat1",
     "category": "mern",
     "links": {
-      "view": "https://github.com/jigar-sable/WebChat#webchat",
-      "code": "https://github.com/jigar-sable/WebChat"
+      "view": "server/webchat1.png",
+      "code": "#"
     }
   }
 ]
