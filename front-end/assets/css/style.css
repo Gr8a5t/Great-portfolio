@@ -221,28 +221,38 @@ header .navbar ul li a:hover {
 .home .image img:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
+/* Main Heading */
 .home .content h2 {
   font-size: 5rem;
   font-weight: 800;
-  color: #002057;
+  color: #0F172A; /* Dark Navy for strong base text */
 }
+
+/* Highlighted Name (e.g., Onweazu) */
 .home .content h2 span {
   font-size: 5rem;
   font-weight: 800;
-  color: #ff7b00;
+  color: #F97316; /* Vivid Orange for accent */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* improves contrast on light polygons */
 }
+
+/* Subheading Text (e.g., "I Am Into ...") */
 .home .content p {
   font-size: 2.5rem;
-  color: #000;
+  color: #0F172A; /* Keep this clean navy — more readable than black */
   font-weight: 600;
   padding: 1rem 0;
 }
+
+/* Highlighted Skill (e.g., "Software Engineering") */
 .home .content p span {
   font-size: 2.5rem;
-  color: rgb(148, 8, 8);
-  font-weight: 600;
+  color: #F97316; /* Match accent orange for consistency */
+  font-weight: 700;
   padding: 1rem 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25); /* subtle pop */
 }
+
 .home .btn {
   margin-top: 1rem;
   position: absolute;
@@ -1223,3 +1233,9 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+@media (max-width: 768px) {
+  .image img {
+    width: 80%;      /* shrink slightly */
+    margin: 0 auto;  /* center the image */
+  }
+}
