@@ -112,9 +112,40 @@
         visibility: hidden;
         pointer-events: none;
       }
+
+      /* Hide the default cursor */
+body {
+  cursor: none;
+}
+
+/* Custom cursor circle */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 123, 255, 0.8); /* Blue with slight transparency */
+  border-radius: 50%;
+  pointer-events: none; /* Prevent it from blocking clicks */
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  z-index: 9999;
+}
+
+a:hover ~ .custom-cursor,
+button:hover ~ .custom-cursor {
+  transform: translate(-50%, -50%) scale(1.8);
+  background-color: rgba(0, 123, 255, 0.5);
+}
+
+
     </style>
 </head>
 <body oncontextmenu="return false">
+
+  <div class="custom-cursor"></div>
+
 
 <!-- preloader starts -->
 <div class="loader-container" id="preloader" aria-hidden="false">
@@ -484,6 +515,16 @@ VANTA.WAVES({
     }, 2000); // 2000ms = 2s (adjust if you want it longer/shorter)
   });
 </script>
+
+<script>
+  const cursor = document.querySelector(".custom-cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.top = e.clientY + "px";
+    cursor.style.left = e.clientX + "px";
+  });
+</script>
+
 
 </body>
 </html>
